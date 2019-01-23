@@ -1,33 +1,33 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import socket as s
 
 def get_data():
 
-    print "Type the host name and press 'Enter'\n"
-    print "     (For example: google.com)\n"
+    print("Type the host name and press 'Enter'\n")
+    print("     (For example: google.com)\n")
 
-    h = str(raw_input())
-    print "\n"
+    h = str(input("URL: "))
+    print("\n")
 
     return h
 
 def print_data(hn, al, ipl):
 
-    print "- Host name: " + hn + "\n"
+    print("- Host name: " + hn + "\n")
 
-    print "- Alias list"
-    print "     (alternative host names, possibly empty)"
+    print("- Alias list")
+    print("     (alternative host names, possibly empty)")
     if (len(al)):
         for a in al:
-            print a + "\n"
+            print(a + "\n")
     else:
-        print " ---- \n"
+        print(" ---- \n")
 
-    print "- Addresses for the same interface on the same host"
-    print "     (often but not always a single address)"
+    print("- Addresses for the same interface on the same host")
+    print("     (often but not always a single address)")
     for ip in ipl:
-        print ip + "\n"
+        print(ip + "\n")
 
 def url2ip():
 
@@ -39,3 +39,4 @@ def url2ip():
 
 if __name__ == '__main__':
     url2ip()
+

@@ -1,5 +1,5 @@
 SOURCE := main.py
-PYTHON := python
+PYTHON := python3
 
 run:
 	$(PYTHON) $(SOURCE)
